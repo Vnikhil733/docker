@@ -3,7 +3,7 @@ MAINTAINER Sushant Kiran
 RUN mkdir /opt/tomcat/
 WORKDIR /opt/tomcat
 RUN curl -O http://mirrors.estointernet.in/apache/tomcat/tomcat-9/v9.0.27/bin/apache-tomcat-9.0.27.tar.gz
-RUN tar xvfz apache*.tar.gz
+RUN tar xvfz apache*.tar.gz /opt/tomcat
 RUN mv apache-tomcat-9.0.27/* /opt/tomcat/.
 RUN yum -y install java
 RUN java -version
