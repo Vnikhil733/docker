@@ -1,3 +1,3 @@
 FROM nginx
-MAINTAINER intelliqit
+MAINTAINER Nikhil
 EXPOSE 90
